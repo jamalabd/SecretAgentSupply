@@ -18,7 +18,7 @@ footer {
   align-items: center;
   text-align: left;
   margin-top: 4rem;
-  padding: 5rem 0;
+  padding: 5rem 10rem;
 }
 
 
@@ -43,13 +43,6 @@ footer {
 }
 
 
-.banner {
-  display: flex;
-  width: 100%auto;
-  background-color: black;
-  padding-bottom: 0.66rem;
-  padding-top: 0.66rem;
-}
 
 
 .products {
@@ -73,6 +66,12 @@ footer {
 
 
 
+.banner {
+display : flex;
+background-color : black;
+padding-bottom : 0.66rem;
+padding-top : 0.66rem;
+}
 
 
 
@@ -86,6 +85,15 @@ footer {
   justify-content: center;
 
 }
+
+#red span {
+  margin: 0.75rem 3rem;
+
+}
+
+
+
+
 
 
 .box img {
@@ -114,7 +122,6 @@ span.sp {
 
 span.gps {
   background-color: black;
-  /*width: 100%;*/
   padding: 1rem 2rem;
 
 }
@@ -130,7 +137,6 @@ div.info {
 
 div.location {
   display: flex;
-  /*flex: 1*/
   flex-direction: column;
   width: 33%;
   margin: 0rem 0rem 0rem 1rem;
@@ -140,7 +146,6 @@ div.location {
 
 div.hours {
   display: flex;
-  /*flex: 1;*/
   flex-direction: column;
   width: 33%;
   margin: 0rem 1rem 0rem 0rem;
@@ -150,7 +155,6 @@ div.hours {
 
 
 span.num {
-  /*width: 100%;*/
   background-color: black;
   padding: 1rem 2rem;
 
@@ -177,6 +181,7 @@ div.black h1 {
   margin: 0rem 0rem 3rem 3rem;
 }
 
+
 div.black {
   display: flex;
   width: 25rem;
@@ -190,15 +195,12 @@ div.black {
   align-items: flex-start;
 
 
-}
-
-
-#red span {
-  margin: 0.75rem 3rem;
 
 }
 
-.banner img {
+
+
+div.banner img {
   height: 1.5rem;
   padding-left: 0.5rem;
   padding-right: 1rem;
@@ -209,7 +211,183 @@ div.black {
 
 
 
-.banner span {
+div.banner span {
     font-size: 1rem;
+
+}
+
+
+ul {
+  justify-content: center;
+}
+
+
+li{
+  width: 100%;
+  display: flex;
+  background-color: firebrick;
+  flex-direction:row;
+
+  margin: 0.75rem 3rem;
+  color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+  #red span {
+    display: none;
+
+  }
+
+
+
+
+  div.glass {
+    display: none;
+  }
+
+
+
+  div.location {
+
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+
+
+  div.hours {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+
+  .box {
+    width: 45%;
+  }
+
+
+footer {
+padding: 5rem 0rem;
+}
+
+
+ div.black {
+  left: 0rem;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1023px) {
+
+
+  ul li{
+   display: none;
+  }
+
+
+
+
+}
+
+
+@media only screen and (max-width:470px) {
+
+  div.black h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin: 1rem 0 0.45rem 2rem;
+  }
+
+
+  div.black h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 1rem 2rem;
+  }
+
+     div.black{
+      display: flex;
+      width: 25rem;
+      height: 5rem;
+      background-color: black;
+      position: relative;
+      top: 9.5rem;
+      color: white;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+    .top {
+      display: flex;
+      height: 15rem;
+    }
+
+    .box {
+      width: 90%;
+}
+
+
+  div.watch {
+  display: none;
+}
+
+
+footer {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 5rem 0rem;
+  justify-content: center;
+}
+
+
+
+div.banner img {
+  margin-left: 0rem;
+
+}
+
+
+div.info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+  div.location {
+    width: 90%;
+    margin: 0.5rem 1rem ;
+  }
+
+
+
+  div.hours {
+    width: 90%;
+    margin: 0.5rem 1rem ;
+
+
+  }
+
+
+
+
+
 
 }
